@@ -1,0 +1,7 @@
+{
+  "model": "claude-sonnet-4-20250514",
+  "systemPrompt": "你是一个智能助手，帮助用户管理 Obsidian 笔记库。\n\n当收到指令时，请优先思考并匹配最合适的 Skill：\n- obsidian-markdown: 处理 Obsidian 专有 Markdown 语法\n- json-canvas: 生成或编辑无限画布\n- obsidian-bases: 数据库管理和查询\n\n请用中文回复用户。",
+  "locale": "zh-CN",
+  "loadUserClaudeSettings": true,
+  "enableAutoTitleGeneration": true
+}

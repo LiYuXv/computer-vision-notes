@@ -1,0 +1,20 @@
+{
+  "id": "conv-1774973925987-xuvtz49so",
+  "title": "调整lecture2笔记为标准md格式",
+  "titleGenerationStatus": "success",
+  "createdAt": 1774973925992,
+  "updatedAt": 1774973994273,
+  "lastResponseAt": 1774973994273,
+  "sessionId": "a9bfaffa-a2ef-4e60-862c-5bfd1bb1b8d7",
+  "sdkSessionId": "a9bfaffa-a2ef-4e60-862c-5bfd1bb1b8d7",
+  "currentNote": "笔记/Lecture 2 - 相机模型与图像.md",
+  "usage": {
+    "model": "claude-sonnet-4-20250514",
+    "inputTokens": 7106,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 33292,
+    "contextWindow": 200000,
+    "contextTokens": 40398,
+    "percentage": 20
+  }
+}

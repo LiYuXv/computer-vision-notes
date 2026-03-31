@@ -1,0 +1,32 @@
+# Obsidian
+.obsidian/
+.trash/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Media (large files)
+*.mp4
+*.mov
+*.avi
+*.zip
+*.rar
+*.7z
+
+# Images (optional - comment out if you want to track images)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+
+# Cache
+.vscode/
+.idea/
