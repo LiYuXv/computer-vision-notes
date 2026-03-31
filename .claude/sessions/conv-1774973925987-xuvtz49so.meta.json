@@ -3,17 +3,17 @@
   "title": "调整lecture2笔记为标准md格式",
   "titleGenerationStatus": "success",
   "createdAt": 1774973925992,
-  "updatedAt": 1774974841195,
-  "lastResponseAt": 1774974841195,
+  "updatedAt": 1774975750373,
+  "lastResponseAt": 1774975750373,
   "sessionId": "a9bfaffa-a2ef-4e60-862c-5bfd1bb1b8d7",
   "sdkSessionId": "a9bfaffa-a2ef-4e60-862c-5bfd1bb1b8d7",
   "usage": {
     "model": "claude-sonnet-4-20250514",
-    "inputTokens": 11365,
+    "inputTokens": 17188,
     "cacheCreationInputTokens": 0,
     "cacheReadInputTokens": 33292,
     "contextWindow": 200000,
-    "contextTokens": 44657,
-    "percentage": 22
+    "contextTokens": 50480,
+    "percentage": 25
   }
 }
