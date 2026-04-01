@@ -1,12 +1,13 @@
 {
   "id": "conv-1774973925987-xuvtz49so",
-  "title": "调整lecture2笔记为标准md格式",
+  "title": "统一lecture3与lecture1的格式",
   "titleGenerationStatus": "success",
   "createdAt": 1774973925992,
-  "updatedAt": 1774975750373,
-  "lastResponseAt": 1774975750373,
+  "updatedAt": 1775054582289,
+  "lastResponseAt": 1775054516969,
   "sessionId": "a9bfaffa-a2ef-4e60-862c-5bfd1bb1b8d7",
   "sdkSessionId": "a9bfaffa-a2ef-4e60-862c-5bfd1bb1b8d7",
+  "currentNote": "计算机视觉/笔记/Lecture 3.md",
   "usage": {
     "model": "claude-sonnet-4-20250514",
     "inputTokens": 17188,
