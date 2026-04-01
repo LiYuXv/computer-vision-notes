@@ -3,18 +3,18 @@
   "title": "调整lecture3格式匹配lecture1",
   "titleGenerationStatus": "success",
   "createdAt": 1775054586297,
-  "updatedAt": 1775054717597,
-  "lastResponseAt": 1775054717597,
+  "updatedAt": 1775055342770,
+  "lastResponseAt": 1775055342770,
   "sessionId": "15e9f5fb-a5c5-4d45-bdd1-4a25a42cae16",
   "sdkSessionId": "15e9f5fb-a5c5-4d45-bdd1-4a25a42cae16",
   "currentNote": "计算机视觉/笔记/Lecture 3.md",
   "usage": {
     "model": "claude-sonnet-4-20250514",
-    "inputTokens": 13120,
+    "inputTokens": 19189,
     "cacheCreationInputTokens": 0,
     "cacheReadInputTokens": 33290,
     "contextWindow": 200000,
-    "contextTokens": 46410,
-    "percentage": 23
+    "contextTokens": 52479,
+    "percentage": 26
   }
 }
