@@ -1,385 +1,48 @@
 {
-  "nodes": [
-    {
-      "id": "a1b2c3d4e5f60001",
-      "type": "text",
-      "x": 500,
-      "y": 400,
-      "width": 300,
-      "height": 80,
-      "color": "6",
-      "text": "# Lecture 3\n## 图像处理"
-    },
-    {
-      "id": "a1b2c3d4e5f60002",
-      "type": "group",
-      "x": 0,
-      "y": 0,
-      "width": 450,
-      "height": 800,
-      "label": "点处理",
-      "color": "1"
-    },
-    {
-      "id": "a1b2c3d4e5f60003",
-      "type": "text",
-      "x": 50,
-      "y": 50,
-      "width": 350,
-      "height": 50,
-      "text": "## 点处理\n**Point Processing**"
-    },
-    {
-      "id": "a1b2c3d4e5f60004",
-      "type": "text",
-      "x": 80,
-      "y": 140,
-      "width": 280,
-      "height": 50,
-      "color": "1",
-      "text": "### 直方图\n灰度分布统计"
-    },
-    {
-      "id": "a1b2c3d4e5f60005",
-      "type": "text",
-      "x": 80,
-      "y": 220,
-      "width": 280,
-      "height": 50,
-      "color": "1",
-      "text": "### 对比度拉伸\n扩大灰度范围"
-    },
-    {
-      "id": "a1b2c3d4e5f60006",
-      "type": "text",
-      "x": 80,
-      "y": 300,
-      "width": 280,
-      "height": 50,
-      "color": "1",
-      "text": "### 直方图均衡化\n均匀分布"
-    },
-    {
-      "id": "a1b2c3d4e5f60007",
-      "type": "text",
-      "x": 80,
-      "y": 380,
-      "width": 280,
-      "height": 50,
-      "color": "1",
-      "text": "### 窗宽窗位\n医学图像调整"
-    },
-    {
-      "id": "a1b2c3d4e5f60008",
-      "type": "group",
-      "x": 850,
-      "y": 0,
-      "width": 450,
-      "height": 800,
-      "label": "邻域处理/滤波",
-      "color": "4"
-    },
-    {
-      "id": "a1b2c3d4e5f60009",
-      "type": "text",
-      "x": 900,
-      "y": 50,
-      "width": 350,
-      "height": 50,
-      "text": "## 邻域处理/滤波\n**Filtering**"
-    },
-    {
-      "id": "a1b2c3d4e5f60010",
-      "type": "text",
-      "x": 930,
-      "y": 140,
-      "width": 280,
-      "height": 50,
-      "color": "4",
-      "text": "### 均值滤波\n平滑去噪但模糊"
-    },
-    {
-      "id": "a1b2c3d4e5f60011",
-      "type": "text",
-      "x": 930,
-      "y": 220,
-      "width": 280,
-      "height": 50,
-      "color": "4",
-      "text": "### 高斯滤波\n自然平滑可分离"
-    },
-    {
-      "id": "a1b2c3d4e5f60012",
-      "type": "text",
-      "x": 930,
-      "y": 300,
-      "width": 280,
-      "height": 50,
-      "color": "4",
-      "text": "### 中值滤波\n去椒盐保边缘"
-    },
-    {
-      "id": "a1b2c3d4e5f60013",
-      "type": "text",
-      "x": 930,
-      "y": 380,
-      "width": 280,
-      "height": 50,
-      "color": "4",
-      "text": "### Sobel滤波器\n边缘检测"
-    },
-    {
-      "id": "a1b2c3d4e5f60014",
-      "type": "text",
-      "x": 930,
-      "y": 460,
-      "width": 280,
-      "height": 50,
-      "color": "4",
-      "text": "### 锐化滤波\n增强细节"
-    },
-    {
-      "id": "a1b2c3d4e5f60015",
-      "type": "text",
-      "x": 930,
-      "y": 540,
-      "width": 280,
-      "height": 50,
-      "color": "4",
-      "text": "### 互相关与卷积\n核翻转是关键"
-    },
-    {
-      "id": "a1b2c3d4e5f60016",
-      "type": "text",
-      "x": 930,
-      "y": 620,
-      "width": 280,
-      "height": 50,
-      "color": "4",
-      "text": "### 模板匹配NCC\n滑窗找目标"
-    },
-    {
-      "id": "a1b2c3d4e5f60017",
-      "type": "group",
-      "x": 425,
-      "y": 850,
-      "width": 450,
-      "height": 750,
-      "label": "频率分析",
-      "color": "5"
-    },
-    {
-      "id": "a1b2c3d4e5f60018",
-      "type": "text",
-      "x": 475,
-      "y": 900,
-      "width": 350,
-      "height": 50,
-      "text": "## 频率分析\n**Frequency Analysis**"
-    },
-    {
-      "id": "a1b2c3d4e5f60019",
-      "type": "text",
-      "x": 505,
-      "y": 990,
-      "width": 280,
-      "height": 50,
-      "color": "5",
-      "text": "### 傅里叶级数\n分解为正余弦"
-    },
-    {
-      "id": "a1b2c3d4e5f60020",
-      "type": "text",
-      "x": 505,
-      "y": 1070,
-      "width": 280,
-      "height": 50,
-      "color": "5",
-      "text": "### 幅值与相位\n强度与位置"
-    },
-    {
-      "id": "a1b2c3d4e5f60021",
-      "type": "text",
-      "x": 505,
-      "y": 1150,
-      "width": 280,
-      "height": 50,
-      "color": "5",
-      "text": "### 卷积定理\n空间卷积=频域乘法"
-    },
-    {
-      "id": "a1b2c3d4e5f60022",
-      "type": "text",
-      "x": 505,
-      "y": 1230,
-      "width": 280,
-      "height": 50,
-      "color": "5",
-      "text": "### 低通/高通滤波\n模糊/锐化"
-    },
-    {
-      "id": "a1b2c3d4e5f60023",
-      "type": "text",
-      "x": 505,
-      "y": 1310,
-      "width": 280,
-      "height": 50,
-      "color": "5",
-      "text": "### 混合图像\n近看远看不同"
-    }
-  ],
-  "edges": [
-    {
-      "id": "e1b2c3d4e5f60001",
-      "fromNode": "a1b2c3d4e5f60001",
-      "fromSide": "left",
-      "toNode": "a1b2c3d4e5f60002",
-      "toSide": "right",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60002",
-      "fromNode": "a1b2c3d4e5f60001",
-      "fromSide": "right",
-      "toNode": "a1b2c3d4e5f60008",
-      "toSide": "left",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60003",
-      "fromNode": "a1b2c3d4e5f60001",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60017",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60004",
-      "fromNode": "a1b2c3d4e5f60003",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60004",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60005",
-      "fromNode": "a1b2c3d4e5f60004",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60005",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60006",
-      "fromNode": "a1b2c3d4e5f60005",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60006",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60007",
-      "fromNode": "a1b2c3d4e5f60006",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60007",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60008",
-      "fromNode": "a1b2c3d4e5f60009",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60010",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60009",
-      "fromNode": "a1b2c3d4e5f60010",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60011",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60010",
-      "fromNode": "a1b2c3d4e5f60011",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60012",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60011",
-      "fromNode": "a1b2c3d4e5f60012",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60013",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60012",
-      "fromNode": "a1b2c3d4e5f60013",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60014",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60013",
-      "fromNode": "a1b2c3d4e5f60014",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60015",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60014",
-      "fromNode": "a1b2c3d4e5f60015",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60016",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60015",
-      "fromNode": "a1b2c3d4e5f60018",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60019",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60016",
-      "fromNode": "a1b2c3d4e5f60019",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60020",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60017",
-      "fromNode": "a1b2c3d4e5f60020",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60021",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60018",
-      "fromNode": "a1b2c3d4e5f60021",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60022",
-      "toSide": "top",
-      "label": ""
-    },
-    {
-      "id": "e1b2c3d4e5f60019",
-      "fromNode": "a1b2c3d4e5f60022",
-      "fromSide": "bottom",
-      "toNode": "a1b2c3d4e5f60023",
-      "toSide": "top",
-      "label": ""
-    }
-  ]
+	"nodes":[
+		{"id":"a1b2c3d4e5f60002","type":"group","x":0,"y":0,"width":450,"height":800,"color":"1","label":"点处理"},
+		{"id":"a1b2c3d4e5f60008","type":"group","x":875,"y":0,"width":425,"height":800,"color":"4","label":"邻域处理/滤波"},
+		{"id":"a1b2c3d4e5f60017","type":"group","x":425,"y":940,"width":450,"height":750,"color":"5","label":"频率分析"},
+		{"id":"a1b2c3d4e5f60001","type":"text","text":"# Lecture 3\n## 图像处理","x":500,"y":400,"width":300,"height":80,"color":"6"},
+		{"id":"a1b2c3d4e5f60003","type":"text","text":"## 点处理\n**Point Processing**","x":50,"y":50,"width":350,"height":50},
+		{"id":"a1b2c3d4e5f60004","type":"text","text":"### 直方图\n灰度分布统计","x":80,"y":140,"width":280,"height":50,"color":"1"},
+		{"id":"a1b2c3d4e5f60005","type":"text","text":"### 对比度拉伸\n扩大灰度范围","x":80,"y":220,"width":280,"height":50,"color":"1"},
+		{"id":"a1b2c3d4e5f60006","type":"text","text":"### 直方图均衡化\n均匀分布","x":80,"y":300,"width":280,"height":50,"color":"1"},
+		{"id":"a1b2c3d4e5f60007","type":"text","text":"### 窗宽窗位\n医学图像调整","x":80,"y":380,"width":280,"height":50,"color":"1"},
+		{"id":"a1b2c3d4e5f60009","type":"text","text":"## 邻域处理/滤波\n**Filtering**","x":900,"y":50,"width":350,"height":50},
+		{"id":"a1b2c3d4e5f60010","type":"text","text":"### 均值滤波\n平滑去噪但模糊","x":930,"y":140,"width":280,"height":50,"color":"4"},
+		{"id":"a1b2c3d4e5f60011","type":"text","text":"### 高斯滤波\n自然平滑可分离","x":930,"y":220,"width":280,"height":50,"color":"4"},
+		{"id":"a1b2c3d4e5f60012","type":"text","text":"### 中值滤波\n去椒盐保边缘","x":930,"y":300,"width":280,"height":50,"color":"4"},
+		{"id":"a1b2c3d4e5f60013","type":"text","text":"### Sobel滤波器\n边缘检测","x":930,"y":380,"width":280,"height":50,"color":"4"},
+		{"id":"a1b2c3d4e5f60014","type":"text","text":"### 锐化滤波\n增强细节","x":930,"y":460,"width":280,"height":50,"color":"4"},
+		{"id":"a1b2c3d4e5f60015","type":"text","text":"### 互相关与卷积\n核翻转是关键","x":930,"y":540,"width":280,"height":50,"color":"4"},
+		{"id":"a1b2c3d4e5f60016","type":"text","text":"### 模板匹配NCC\n滑窗找目标","x":930,"y":620,"width":280,"height":50,"color":"4"},
+		{"id":"a1b2c3d4e5f60018","type":"text","text":"## 频率分析\n**Frequency Analysis**","x":475,"y":990,"width":350,"height":50},
+		{"id":"a1b2c3d4e5f60019","type":"text","text":"### 傅里叶级数\n分解为正余弦","x":505,"y":1080,"width":280,"height":50,"color":"5"},
+		{"id":"a1b2c3d4e5f60020","type":"text","text":"### 幅值与相位\n强度与位置","x":505,"y":1160,"width":280,"height":50,"color":"5"},
+		{"id":"a1b2c3d4e5f60021","type":"text","text":"### 卷积定理\n空间卷积=频域乘法","x":505,"y":1240,"width":280,"height":50,"color":"5"},
+		{"id":"a1b2c3d4e5f60022","type":"text","text":"### 低通/高通滤波\n模糊/锐化","x":505,"y":1320,"width":280,"height":50,"color":"5"},
+		{"id":"a1b2c3d4e5f60023","type":"text","text":"### 混合图像\n近看远看不同","x":505,"y":1400,"width":280,"height":50,"color":"5"}
+	],
+	"edges":[
+		{"id":"e1b2c3d4e5f60001","fromNode":"a1b2c3d4e5f60001","fromSide":"left","toNode":"a1b2c3d4e5f60002","toSide":"right"},
+		{"id":"e1b2c3d4e5f60002","fromNode":"a1b2c3d4e5f60001","fromSide":"right","toNode":"a1b2c3d4e5f60008","toSide":"left"},
+		{"id":"e1b2c3d4e5f60003","fromNode":"a1b2c3d4e5f60001","fromSide":"bottom","toNode":"a1b2c3d4e5f60017","toSide":"top"},
+		{"id":"e1b2c3d4e5f60004","fromNode":"a1b2c3d4e5f60003","fromSide":"bottom","toNode":"a1b2c3d4e5f60004","toSide":"top"},
+		{"id":"e1b2c3d4e5f60005","fromNode":"a1b2c3d4e5f60004","fromSide":"bottom","toNode":"a1b2c3d4e5f60005","toSide":"top"},
+		{"id":"e1b2c3d4e5f60006","fromNode":"a1b2c3d4e5f60005","fromSide":"bottom","toNode":"a1b2c3d4e5f60006","toSide":"top"},
+		{"id":"e1b2c3d4e5f60007","fromNode":"a1b2c3d4e5f60006","fromSide":"bottom","toNode":"a1b2c3d4e5f60007","toSide":"top"},
+		{"id":"e1b2c3d4e5f60008","fromNode":"a1b2c3d4e5f60009","fromSide":"bottom","toNode":"a1b2c3d4e5f60010","toSide":"top"},
+		{"id":"e1b2c3d4e5f60009","fromNode":"a1b2c3d4e5f60010","fromSide":"bottom","toNode":"a1b2c3d4e5f60011","toSide":"top"},
+		{"id":"e1b2c3d4e5f60010","fromNode":"a1b2c3d4e5f60011","fromSide":"bottom","toNode":"a1b2c3d4e5f60012","toSide":"top"},
+		{"id":"e1b2c3d4e5f60011","fromNode":"a1b2c3d4e5f60012","fromSide":"bottom","toNode":"a1b2c3d4e5f60013","toSide":"top"},
+		{"id":"e1b2c3d4e5f60012","fromNode":"a1b2c3d4e5f60013","fromSide":"bottom","toNode":"a1b2c3d4e5f60014","toSide":"top"},
+		{"id":"e1b2c3d4e5f60013","fromNode":"a1b2c3d4e5f60014","fromSide":"bottom","toNode":"a1b2c3d4e5f60015","toSide":"top"},
+		{"id":"e1b2c3d4e5f60014","fromNode":"a1b2c3d4e5f60015","fromSide":"bottom","toNode":"a1b2c3d4e5f60016","toSide":"top"},
+		{"id":"e1b2c3d4e5f60015","fromNode":"a1b2c3d4e5f60018","fromSide":"bottom","toNode":"a1b2c3d4e5f60019","toSide":"top"},
+		{"id":"e1b2c3d4e5f60016","fromNode":"a1b2c3d4e5f60019","fromSide":"bottom","toNode":"a1b2c3d4e5f60020","toSide":"top"},
+		{"id":"e1b2c3d4e5f60017","fromNode":"a1b2c3d4e5f60020","fromSide":"bottom","toNode":"a1b2c3d4e5f60021","toSide":"top"},
+		{"id":"e1b2c3d4e5f60018","fromNode":"a1b2c3d4e5f60021","fromSide":"bottom","toNode":"a1b2c3d4e5f60022","toSide":"top"},
+		{"id":"e1b2c3d4e5f60019","fromNode":"a1b2c3d4e5f60022","fromSide":"bottom","toNode":"a1b2c3d4e5f60023","toSide":"top"}
+	]
 }
