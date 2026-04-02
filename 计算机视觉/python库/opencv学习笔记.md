@@ -37,7 +37,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-Jupyter 中常见显示函数：
+python 中常见显示函数：
 
 ```python
 def show(img, title="image"):
