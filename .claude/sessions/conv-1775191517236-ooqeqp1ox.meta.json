@@ -1,0 +1,20 @@
+{
+  "id": "conv-1775191517236-ooqeqp1ox",
+  "title": "Add Lecture 5 to Obsidian CV canvas",
+  "titleGenerationStatus": "success",
+  "createdAt": 1775191517239,
+  "updatedAt": 1775192514832,
+  "lastResponseAt": 1775192514832,
+  "sessionId": "e4de8154-0add-4fa7-ab34-0100f96dd5b4",
+  "sdkSessionId": "e4de8154-0add-4fa7-ab34-0100f96dd5b4",
+  "currentNote": "计算机视觉/思维导图/计算机视觉课程总思维导图（Lecture 1-4）.canvas",
+  "usage": {
+    "model": "opus",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}
