@@ -1,0 +1,20 @@
+{
+  "id": "conv-1775285707157-7zf330e25",
+  "title": "调整 Lecture5 笔记并添加 Lecture6 思维导图",
+  "titleGenerationStatus": "success",
+  "createdAt": 1775285707157,
+  "updatedAt": 1775286706376,
+  "lastResponseAt": 1775286706376,
+  "sessionId": "7ade840c-d623-4d35-9ce2-ffbed63c45f6",
+  "sdkSessionId": "7ade840c-d623-4d35-9ce2-ffbed63c45f6",
+  "currentNote": "Lecture 6 - 多视图几何.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}

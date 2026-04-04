@@ -1,6 +1,6 @@
 ---
-title: "计算机视觉课程总思维导图（Lecture 1-4）"
-date: 2026-04-03
+title: "计算机视觉课程总思维导图（Lecture 1-6）"
+date: 2026-04-04
 tags:
   - 机器视觉
   - 课程笔记
@@ -10,18 +10,18 @@ tags:
 aliases:
   - 机器视觉总复习
   - 计算机视觉总图谱
-  - Lecture 1-4 总结
+  - Lecture 1-6 总结
 ---
 
-# 计算机视觉课程总思维导图（Lecture 1-4）
+# 计算机视觉课程总思维导图（Lecture 1-6）
 
 > [!info] 笔记定位
-> 这是一份面向 [[Lecture 1 - 机器视觉概述]]、[[Lecture 2 - 相机模型与图像]]、[[Lecture 3 - 图像处理]]、[[Lecture 4 - 特征提取]] 的**课程总思维导图 + 代码映射总表**。
+> 这是一份面向 [[Lecture 1 - 机器视觉概述]]、[[Lecture 2 - 相机模型与图像]]、[[Lecture 3 - 图像处理]]、[[Lecture 4 - 特征提取]]、[[Lecture 5 - 特征描述与图像对齐]]、[[Lecture 6 - 多视图几何]] 的**课程总思维导图 + 代码映射总表**。
 >
 > 目标有三个：
 > 1. 帮你从课程全局理解知识递进关系；
 > 2. 帮你把理论点和 OpenCV / Python 实现对应起来；
-> 3. 为后续扩展到 Lecture 5 及之后的内容预留结构。
+> 3. 把 Lecture 1-6 串成一条从二维图像到三维几何的完整主线。
 
 > [!tip] 使用方式
 > - **复习理论**：先看“总体递进图”和各 Lecture 的树状结构
@@ -34,10 +34,12 @@ aliases:
 
 ```mermaid
 graph TD
-    A[计算机视觉课程<br/>Lecture 1-4] --> B[Lecture 1<br/>机器视觉概述]
+    A[计算机视觉课程<br/>Lecture 1-6] --> B[Lecture 1<br/>机器视觉概述]
     A --> C[Lecture 2<br/>相机模型与图像]
     A --> D[Lecture 3<br/>图像处理]
     A --> E[Lecture 4<br/>特征检测]
+    A --> F[Lecture 5<br/>特征描述与图像对齐]
+    A --> G[Lecture 6<br/>多视图几何]
 
     B --> B1[领域定位]
     B --> B2[应用场景]
@@ -60,6 +62,16 @@ graph TD
     E --> E2[Canny 边缘]
     E --> E3[Hough 直线]
 
+    F --> F1[SIFT / GLOH]
+    F --> F2[特征匹配]
+    F --> F3[仿射 / 投影变换]
+    F --> F4[RANSAC]
+
+    G --> G1[相机标定]
+    G --> G2[极线几何]
+    G --> G3[E / F 矩阵]
+    G --> G4[三角测量]
+
     B4 --> C
     C5 --> D
     D2 --> E2
@@ -68,17 +80,20 @@ graph TD
     D1 --> D2
     D2 --> D5
     E2 --> E3
+    E --> F
+    C --> G
+    F --> G
 ```
 
 > [!note] 主线总结
 > 课程的递进关系是：
-> **先知道“机器视觉在做什么” → 再理解“图像是怎样形成和表示的” → 再掌握“怎样处理图像” → 最后进入“怎样从图像中提取结构特征”。**
+> **先知道“机器视觉在做什么” → 再理解“图像是怎样形成和表示的” → 再掌握“怎样处理图像” → 再学习“怎样提取和匹配稳定特征” → 最后进入“怎样通过多视图关系恢复三维结构”。**
 
 ---
 
 ## 2. 总体树状思维导图（细化版）
 
-- **计算机视觉课程（Lecture 1-4）**
+- **计算机视觉课程（Lecture 1-6）**
   - **Lecture 1：机器视觉概述**
     - 机器视觉的定义与定位
       - 机器视觉 = 用机器获取图像并进行分析、理解、决策
@@ -166,11 +181,52 @@ graph TD
       - 参数空间投票
       - 累加器峰值
       - 广义霍夫思想
+  - **Lecture 5：特征描述与图像对齐**
+    - 局部特征流程
+      - Detection / Description / Matching / Alignment
+      - 局部直方图 vs 全局直方图
+    - 描述子
+      - SIFT
+      - GLOH
+      - 梯度方向直方图
+      - 128 维 / 272 维
+    - 几何变换与对齐
+      - 平移 / 旋转 / 缩放
+      - 仿射变换
+      - 投影变换
+      - Warping / Blending
+    - 稳健估计
+      - 最小二乘
+      - outliers / inliers
+      - RANSAC
+  - **Lecture 6：多视图几何**
+    - 相机几何基础
+      - 内参矩阵 $K$
+      - 外参 $R,T$
+      - 投影矩阵 $P = K[R|T]$
+      - 相机标定
+    - 极线几何
+      - 极平面
+      - 极线
+      - 极点
+      - 对应点约束
+    - 矩阵模型
+      - 本征矩阵 $E$
+      - 基础矩阵 $F$
+      - $x_2^TEx_1=0$
+      - $x_2^TFx_1=0$
+    - 三维恢复
+      - 8 点算法
+      - 位姿恢复
+      - 三角测量
+      - SfM / AR / 运动估计
   - **课程知识递进关系**
     - Lecture 1 提供问题背景和系统框架
     - Lecture 2 提供图像形成与表示基础
     - Lecture 3 提供图像增强、滤波、频域分析工具
     - Lecture 4 基于梯度、滤波、局部结构进入特征提取
+    - Lecture 5 从“检测哪里”进入“怎样表示、匹配和对齐”
+    - Lecture 6 从二维匹配进一步进入相机关系与三维结构恢复
 
 ---
 
@@ -927,7 +983,213 @@ circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, dp=1.2,
 
 ---
 
-## 7. Lecture 1-4 的关键公式总表
+## 7. Lecture 5：特征描述与图像对齐
+
+### 7.1 思维导图
+
+- **Lecture 5：特征描述与图像对齐**
+  - **知识点 1：局部特征流程**
+    - Detection：找稳定关键点
+    - Description：把关键点邻域编码成向量
+    - Matching：比较描述子并建立候选对应点
+    - Alignment：估计几何变换并完成图像对齐
+    - 与前后知识联系
+      - 承接 Lecture 4 的特征检测
+      - 为 Lecture 6 的多视图几何提供匹配点基础
+  - **知识点 2：局部直方图与描述子**
+    - 全局直方图 vs 局部直方图
+    - SIFT：梯度方向直方图 + 高斯加权 + 主方向对齐
+    - GLOH：log-polar 划分
+    - 维度记忆
+      - SIFT：128 维
+      - GLOH：272 维
+  - **知识点 3：特征匹配**
+    - 欧氏距离
+    - 余弦相似度
+    - 最近邻匹配
+    - putative matches 与错配点
+  - **知识点 4：几何变换与对齐**
+    - 平移 / 旋转 / 缩放 / 错切
+    - 仿射变换
+    - 投影变换
+    - Warping / Blending
+  - **知识点 5：鲁棒估计**
+    - 最小二乘
+    - inliers / outliers
+    - RANSAC 四字诀：抽样 → 拟合 → 验证 → 重估
+
+### 7.2 代码实现映射：关键点与描述子
+
+| 项目 | 内容 |
+|------|------|
+| 对应函数 | `cv2.SIFT_create()`、`detectAndCompute()` |
+| 所属模块 | `features2d` |
+| 作用 | 检测关键点并计算描述子 |
+| 关键参数 | `nfeatures`, `contrastThreshold`, `edgeThreshold`, `sigma` |
+| 输入输出 | 输入：灰度图；输出：`keypoints`, `descriptors` |
+| 典型场景 | 图像拼接、匹配、检索、配准 |
+
+```python
+sift = cv2.SIFT_create()
+keypoints, descriptors = sift.detectAndCompute(gray, None)
+```
+
+### 7.3 代码实现映射：特征匹配
+
+| 项目 | 内容 |
+|------|------|
+| 对应函数 | `cv2.BFMatcher()`、`cv2.FlannBasedMatcher()`、`match()`、`knnMatch()` |
+| 所属模块 | `features2d` |
+| 作用 | 比较两组描述子并建立候选匹配 |
+| 关键参数 | `normType`, `crossCheck`, `k` |
+| 输入输出 | 输入：两组描述子；输出：`matches` |
+| 典型场景 | 图像配准、目标识别、拼接前匹配 |
+
+```python
+bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
+matches = bf.match(des1, des2)
+matches = sorted(matches, key=lambda m: m.distance)
+```
+
+### 7.4 代码实现映射：几何变换估计与图像对齐
+
+#### 7.4.1 仿射 / 投影模型估计
+
+| 项目 | 内容 |
+|------|------|
+| 对应函数 | `cv2.getAffineTransform()`、`cv2.estimateAffine2D()`、`cv2.findHomography()` |
+| 所属模块 | `imgproc` / `calib3d` |
+| 作用 | 从点对估计仿射或投影变换 |
+| 关键参数 | 点集、`method`、`ransacReprojThreshold` |
+| 输入输出 | 输入：匹配点对；输出：变换矩阵、内点掩码 |
+| 典型场景 | 配准、全景拼接、鲁棒对齐 |
+
+```python
+H, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 3.0)
+A, inliers = cv2.estimateAffine2D(src_pts, dst_pts, method=cv2.RANSAC)
+```
+
+#### 7.4.2 Warping 与融合
+
+| 项目 | 内容 |
+|------|------|
+| 对应函数 | `cv2.warpAffine()`、`cv2.warpPerspective()`、`cv2.addWeighted()` |
+| 所属模块 | `imgproc` / `core` |
+| 作用 | 按估计矩阵对图像重采样并融合 |
+| 关键参数 | `M/H`, `dsize`, `alpha`, `beta` |
+| 输入输出 | 输入：原图、变换矩阵；输出：对齐图、融合图 |
+| 典型场景 | 配准结果输出、全景拼接可视化 |
+
+> [!tip] 理论到代码的映射
+> Lecture 5 的工程主线通常是：
+> `关键点检测 → 描述子计算 → 描述子匹配 → RANSAC 估计变换 → warp / blend`。
+
+---
+
+## 8. Lecture 6：多视图几何
+
+### 8.1 思维导图
+
+- **Lecture 6：多视图几何**
+  - **知识点 1：相机模型与标定**
+    - 内参矩阵 $K$
+    - 外参 $R,T$
+    - 投影矩阵 $P = K[R|T]$
+    - 归一化相机
+    - 相机标定
+  - **知识点 2：极线几何**
+    - 极平面
+    - 极线
+    - 极点
+    - 对应点搜索从二维降到一维
+  - **知识点 3：本征矩阵与基础矩阵**
+    - 本征矩阵 $E$
+    - 基础矩阵 $F$
+    - 极线约束
+    - $E$ 与 $F$ 的关系
+  - **知识点 4：由二维对应到三维恢复**
+    - 8 点算法
+    - 由 $E$ 恢复相机姿态
+    - 三角测量
+  - **知识点 5：应用**
+    - Structure from Motion（SfM）
+    - 稠密重建
+    - 刚体运动估计
+    - 增强现实（AR）
+
+### 8.2 代码实现映射：相机标定与几何关系
+
+#### 8.2.1 相机标定
+
+| 项目 | 内容 |
+|------|------|
+| 对应函数 | `cv2.calibrateCamera()`、`cv2.undistort()` |
+| 所属模块 | `calib3d` |
+| 作用 | 估计内参、畸变参数并完成去畸变 |
+| 关键参数 | `objectPoints`, `imagePoints`, `imageSize`, `cameraMatrix`, `distCoeffs` |
+| 输入输出 | 输入：标定板 3D-2D 对应；输出：`K`, `dist`, 外参 |
+| 典型场景 | 相机标定、视觉测量、立体系统预处理 |
+
+```python
+ret, K, dist, rvecs, tvecs = cv2.calibrateCamera(
+    objectPoints, imagePoints, imageSize, None, None
+)
+```
+
+#### 8.2.2 本征矩阵 / 基础矩阵估计
+
+| 项目 | 内容 |
+|------|------|
+| 对应函数 | `cv2.findEssentialMat()`、`cv2.findFundamentalMat()` |
+| 所属模块 | `calib3d` |
+| 作用 | 从匹配点估计相机间几何关系 |
+| 关键参数 | 点集、`cameraMatrix`、`method`、`prob`、`threshold` |
+| 输入输出 | 输入：两幅图中的匹配点；输出：`E` 或 `F`、内点掩码 |
+| 典型场景 | 双目几何估计、SfM 初始化、立体视觉 |
+
+```python
+E, mask = cv2.findEssentialMat(pts1, pts2, K, method=cv2.RANSAC,
+                               prob=0.999, threshold=1.0)
+F, maskF = cv2.findFundamentalMat(pts1, pts2, cv2.FM_RANSAC)
+```
+
+#### 8.2.3 位姿恢复
+
+| 项目 | 内容 |
+|------|------|
+| 对应函数 | `cv2.recoverPose()` |
+| 所属模块 | `calib3d` |
+| 作用 | 由本征矩阵恢复相机相对旋转和平移方向 |
+| 关键参数 | `E`, `points1`, `points2`, `cameraMatrix` |
+| 输入输出 | 输入：`E` 与匹配点；输出：`R`, `t`, 内点数量 |
+| 典型场景 | 双目位姿恢复、SfM 前两帧初始化 |
+
+```python
+_, R, t, pose_mask = cv2.recoverPose(E, pts1, pts2, K)
+```
+
+#### 8.2.4 三角测量
+
+| 项目 | 内容 |
+|------|------|
+| 对应函数 | `cv2.triangulatePoints()` |
+| 所属模块 | `calib3d` |
+| 作用 | 由两台相机和匹配点恢复三维点 |
+| 关键参数 | `projMatr1`, `projMatr2`, `projPoints1`, `projPoints2` |
+| 输入输出 | 输入：投影矩阵和匹配点；输出：齐次三维点 |
+| 典型场景 | 稀疏三维重建、双目深度恢复 |
+
+```python
+pts4d = cv2.triangulatePoints(P1, P2, pts1_norm, pts2_norm)
+pts3d = (pts4d[:3] / pts4d[3]).T
+```
+
+> [!info] 与前面课程的关系
+> Lecture 6 把 [[Lecture 2 - 相机模型与图像]] 的成像几何、[[Lecture 5 - 特征描述与图像对齐]] 的匹配点和稳健估计真正结合起来，开始进入“三维恢复”。
+
+---
+
+## 9. Lecture 1-6 的关键公式总表
 
 | Lecture | 公式 | 含义 |
 |--------|------|------|
@@ -946,72 +1208,90 @@ circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, dp=1.2,
 | L4 | $C=\det(M)-\alpha(\operatorname{trace}(M))^2$ | Harris 响应 |
 | L4 | $\sqrt{G_x^2+G_y^2}$ | 梯度幅值 |
 | L4 | $d=x\cos\theta+y\sin\theta$ | 霍夫极坐标直线 |
+| L5 | $4 \times 4 \times 8 = 128$ | SIFT 描述子维度 |
+| L5 | $A\theta = b$ | 仿射参数估计线性系统 |
+| L5 | $x_i' = m_1x_i + m_2y_i + t_1,\; y_i' = m_3x_i + m_4y_i + t_2$ | 仿射点映射 |
+| L6 | $P = K[R|T]$ | 投影矩阵 |
+| L6 | $\tilde x = K^{-1}x$ | 归一化坐标 |
+| L6 | $x_2^T E x_1 = 0$ | 本征矩阵约束 |
+| L6 | $x_2^T F x_1 = 0$ | 基础矩阵约束 |
+| L6 | $E = [T]_\times R$ | 本征矩阵与相对位姿关系 |
+| L6 | $F = K^{-T} E K^{-1}$ | $E$ 与 $F$ 的关系 |
 
 ---
 
-## 8. 课程知识的前后衔接图
+## 10. 课程知识的前后衔接图
 
-### 8.1 Lecture 1 → Lecture 2
+### 10.1 Lecture 1 → Lecture 2
 
 - Lecture 1 提出：机器如何“看见”世界？
 - Lecture 2 回答：世界中的三维点如何变成图像中的二维像素？
 
-### 8.2 Lecture 2 → Lecture 3
+### 10.2 Lecture 2 → Lecture 3
 
 - Lecture 2 提供：图像的形成、表示、颜色与灰度基础
 - Lecture 3 回答：拿到图像后如何增强、平滑、滤波、分析频率？
 
-### 8.3 Lecture 3 → Lecture 4
+### 10.3 Lecture 3 → Lecture 4
 
 - Lecture 3 提供：梯度、卷积、高斯平滑、边缘基础、频率理解
 - Lecture 4 回答：如何从这些基础中抽出稳定结构特征（角点、边缘、直线）？
 
-### 8.4 Lecture 4 → 后续 Lecture 5+
+### 10.4 Lecture 4 → Lecture 5
 
-- Harris 可扩展到更稳定的角点与特征描述
-- Canny 可扩展到轮廓分析、分割、形态学
-- Hough 可扩展到圆、椭圆、模板形状检测
-- 相机模型可扩展到立体视觉、三维重建、SLAM
+- Lecture 4 解决：哪里存在稳定、可重复检测的结构特征？
+- Lecture 5 进一步回答：如何把这些特征表示出来，并在不同图像中建立可靠对应？
+
+### 10.5 Lecture 5 → Lecture 6
+
+- Lecture 5 提供：稳定匹配点、几何模型、RANSAC 过滤能力
+- Lecture 6 回答：如何利用这些匹配点恢复相机之间的关系，并进一步恢复三维结构？
+
+### 10.6 Lecture 6 → 后续高级视觉任务
+
+- 多视图几何可扩展到 SfM、SLAM、双目深度估计、AR
+- 从这里可以继续进入三维重建、视觉定位、机器人感知等方向
 
 > [!question] 继续扩展时建议新增哪些主干？
-> 如果后面进入 Lecture 5 及以后，可以沿着以下主线继续补：
+> 如果后面继续扩展，可以沿着以下主线继续补：
 > 1. **形态学与轮廓分析**
 > 2. **特征描述与匹配（SIFT / ORB / HOG）**
-> 3. **几何变换与配准**
-> 4. **分割、检测、识别**
-> 5. **三维视觉与深度估计**
+> 3. **几何变换、配准与拼接**
+> 4. **多视图几何、SfM、SLAM**
+> 5. **分割、检测、识别与三维视觉系统**
 
 ---
 
-## 9. 最小复习路径（考前速查）
+## 11. 最小复习路径（考前速查）
 
 - **第一层：系统视角**
   - 机器视觉系统 = 采集 → 预处理 → 特征提取 → 决策
-- **第二层：几何基础**
+- **第二层：成像几何**
   - 投影模型 = $\mathbf{x}=K[R|T]\mathbf{X}$
 - **第三层：处理基础**
   - 点处理、滤波、卷积、频率分析
-- **第四层：特征提取**
+- **第四层：结构特征**
   - Harris：角点
   - Canny：边缘
   - Hough：直线
-- **第五层：代码映射**
-  - 采集：`imread`, `VideoCapture`
-  - 颜色：`cvtColor`
-  - 平滑：`GaussianBlur`, `blur`, `medianBlur`
-  - 梯度：`Sobel`
-  - 边缘：`Canny`
-  - 角点：`cornerHarris`
-  - 直线：`HoughLines`, `HoughLinesP`
-  - 相机：`projectPoints`, `calibrateCamera`, `solvePnP`, `undistort`
+- **第五层：描述、匹配与对齐**
+  - SIFT / GLOH
+  - 匹配距离
+  - 仿射 / 投影
+  - RANSAC
+- **第六层：多视图几何**
+  - 标定
+  - 极线几何
+  - $E / F$ 矩阵
+  - 三角测量与三维恢复
 
 ---
 
-## 10. 一句话总总结
+## 12. 一句话总总结
 
 > [!note] 总结
-> **Lecture 1 到 Lecture 4 的核心逻辑，就是从“机器视觉是什么”出发，先理解图像如何形成，再掌握图像如何处理，最后学会从图像中提取稳定而有意义的结构特征。**
+> **Lecture 1 到 Lecture 6 的核心逻辑，就是从“机器视觉是什么”出发，先理解图像如何形成，再掌握图像如何处理，接着学会提取、描述和匹配稳定特征，最终进入多视图几何与三维结构恢复。**
 
 ---
 
-*本笔记由 Claudian 整理 | 对应 [[Lecture 1 - 机器视觉概述]]、[[Lecture 2 - 相机模型与图像]]、[[Lecture 3 - 图像处理]]、[[Lecture 4 - 特征提取]] | 可继续扩展到 Lecture 5+*
+*本笔记由 Claudian 整理 | 对应 [[Lecture 1 - 机器视觉概述]]、[[Lecture 2 - 相机模型与图像]]、[[Lecture 3 - 图像处理]]、[[Lecture 4 - 特征提取]]、[[Lecture 5 - 特征描述与图像对齐]]、[[Lecture 6 - 多视图几何]]*
