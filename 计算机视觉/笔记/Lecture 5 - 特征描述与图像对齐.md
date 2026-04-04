@@ -231,4 +231,4 @@ graph TD
 
 ---
 
-*本笔记由 Claudian 整理 | [[Lecture 4 - 特征提取]] → [[Lecture 5 - 特征描述与图像对齐]] → [[Lecture 6 - 多视图几何]]*
+*本笔记由 Claudian 整理 | [[Lecture 4 - 特征提取]] → [[计算机视觉/笔记/Lecture 5 - 特征描述与图像对齐]] → [[Lecture 6 - 多视图几何]]*
