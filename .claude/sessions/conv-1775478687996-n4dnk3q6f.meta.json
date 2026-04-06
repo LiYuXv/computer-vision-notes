@@ -1,0 +1,20 @@
+{
+  "id": "conv-1775478687996-n4dnk3q6f",
+  "title": "Organize Obsidian CV notes and mind map",
+  "titleGenerationStatus": "success",
+  "createdAt": 1775478687996,
+  "updatedAt": 1775482028897,
+  "lastResponseAt": 1775482028897,
+  "sessionId": "ea8d6840-ba7d-423b-a295-9cfe17f8a2fd",
+  "sdkSessionId": "ea8d6840-ba7d-423b-a295-9cfe17f8a2fd",
+  "currentNote": "计算机视觉/笔记/Lecture 7 - 图像分割（1）.md",
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}
