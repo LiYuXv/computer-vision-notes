@@ -92,7 +92,7 @@
 		{"id":"d100000000000016","type":"text","text":"## OpenCV：Graph Cut\n\n- `cv2.grabCut`\n- **作用**：交互式前景/背景分割\n- **关键词**：最小割、数据项、平滑项","x":6550,"y":3600,"width":400,"height":340,"color":"5"},
 		{"id":"d100000000000017","type":"text","text":"## OpenCV：形态学\n\n- `cv2.erode`\n- `cv2.dilate`\n- `cv2.morphologyEx`\n- `cv2.getStructuringElement`\n\n**作用**：去噪、填洞、连接断裂、修边界","x":7020,"y":3600,"width":400,"height":360,"color":"5"},
 		{"id":"b10000000000003d","type":"text","text":"# L9 总览\n\n核心问题：\n**如何根据图像特征完成类别判断？**\n\n主线：\n监督学习 → 分类器 → 评价指标 → BoF → Spatial Pyramid","x":8480,"y":2400,"width":430,"height":240},
-		{"id":"b10000000000003e","type":"file","file":"计算机视觉/笔记/Lecture 9 -.md","x":9000,"y":2400,"width":280,"height":220},
+		{"id":"b10000000000003e","type":"file","file":"计算机视觉/笔记/Lecture 9 - 图像识别.md","x":9000,"y":2400,"width":280,"height":220},
 		{"id":"b10000000000003f","type":"text","text":"## 1. 监督学习\n\n- 样本：`(x_i, y_i)`\n- 训练 / 验证 / 测试集\n- **核心**：用标签学习参数\n- **目标**：提升泛化能力","x":8370,"y":2710,"width":380,"height":220},
 		{"id":"b100000000000040","type":"text","text":"## 2. 线性分类器\n\n- 决策边界：`w₀ + w₁x₁ + w₂x₂ = 0`\n- 本质：超平面分类\n- **问题**：欠拟合 vs 过拟合\n- **联系**：特征表示决定分类上限","x":8820,"y":2710,"width":380,"height":240},
 		{"id":"b100000000000041","type":"text","text":"## 3. 评价指标\n\n- 混淆矩阵：TP / FP / FN / TN\n- Accuracy\n- Precision / Recall / F1\n- ROC / AUC\n- **意义**：评估分类器是否真正可用","x":9270,"y":2710,"width":380,"height":250},

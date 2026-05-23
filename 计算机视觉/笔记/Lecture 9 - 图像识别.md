@@ -1,5 +1,5 @@
 ---
-title: "Lecture 9 - 图像识别"
+title: Lecture 9 - 图像识别
 date: 2026-04-06
 tags:
   - 机器视觉
@@ -392,4 +392,4 @@ graph TD
 
 ---
 
-*本笔记由 Claudian 整理 | [[Lecture 4 - 特征提取]] → [[计算机视觉/笔记/Lecture 5 - 特征描述与图像对齐]] → [[Lecture 7 - 图像分割（1）|图像分割]] → [[Lecture 8 - 图像分割（2）|图像分割（2）]] → [[Lecture 9 -.md|图像识别]]*
+*本笔记由 Claudian 整理 | [[Lecture 4 - 特征提取]] → [[计算机视觉/笔记/Lecture 5 - 特征描述与图像对齐]] → [[Lecture 7 - 图像分割（1）|图像分割]] → [[Lecture 8 - 图像分割（2）|图像分割（2）]] → [[Lecture 9 - 图像识别|图像识别]]*

@@ -303,7 +303,7 @@ Chan-Vese 可以看作从 Lecture 7 过渡到 [[Lecture 8 - 图像分割（2）|
 > - [[Lecture 4 - 特征提取]] 提供边缘与轮廓视角
 > - Lecture 7 把这些低层操作提升为“区域划分”问题
 > - 后续 [[Lecture 8 - 图像分割（2）|Lecture 8 - 图像分割（2）]] 会继续进入图模型与后处理
-> - 再往后则自然衔接到 [[Lecture 9 -.md|Lecture 9 - 图像识别]]
+> - 再往后则自然衔接到 [[Lecture 9 - 图像识别|Lecture 9 - 图像识别]]
 
 ---
 
