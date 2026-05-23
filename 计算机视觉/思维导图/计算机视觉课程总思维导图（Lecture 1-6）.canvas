@@ -83,7 +83,7 @@
 		{"id":"d100000000000014","type":"text","text":"## OpenCV：阈值 / 分水岭\n\n- `cv2.threshold`\n- `cv2.adaptiveThreshold`\n- `cv2.distanceTransform`\n- `cv2.watershed`\n\n**作用**：前景提取、峰值检测、粘连目标分离","x":4810,"y":3600,"width":400,"height":360,"color":"5"},
 		{"id":"d100000000000015","type":"text","text":"## OpenCV / Python：聚类 / 轮廓\n\n- `cv2.kmeans`\n- `skimage.segmentation.slic`\n- `skimage.segmentation.active_contour`\n\n**作用**：区域聚类、超像素、Snake 轮廓演化","x":5280,"y":3600,"width":400,"height":340,"color":"5"},
 		{"id":"b100000000000036","type":"text","text":"# L8 总览\n\n核心问题：\n**如何用图模型优化分割，并把结果修干净？**\n\n主线：\n图表示 → 最短路径 → Graph Cut → 形态学后处理","x":6740,"y":2400,"width":420,"height":240},
-		{"id":"b100000000000037","type":"file","file":"计算机视觉/笔记/Lecture 8 -.md","x":7240,"y":2400,"width":280,"height":220},
+		{"id":"b100000000000037","type":"file","file":"计算机视觉/笔记/Lecture 8 - 图像分割（2）.md","x":7240,"y":2400,"width":280,"height":220},
 		{"id":"b100000000000038","type":"text","text":"## 1. 图表示\n\n- 像素/区域 = 节点\n- 相邻关系/代价 = 边\n- **意义**：把分割写成图优化问题\n- **联系**：承接 L7 的区域与边界","x":6590,"y":2720,"width":380,"height":220},
 		{"id":"b100000000000039","type":"text","text":"## 2. Intelligent Scissors\n\n- 种子点到目标点的最短路径\n- 代价低的位置更贴近边缘\n- **求解**：Dijkstra\n- **定位**：交互式边界跟踪","x":7060,"y":2720,"width":380,"height":250},
 		{"id":"b10000000000003a","type":"text","text":"## 3. Graph Cut\n\n- 加入源点 `s` 与汇点 `t`\n- `n-link`：邻域一致性\n- `t-link`：前景/背景倾向\n- **核心**：最小割 = 全局区域划分","x":6590,"y":3000,"width":380,"height":260},

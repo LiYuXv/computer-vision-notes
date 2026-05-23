@@ -406,4 +406,4 @@ Intelligent Scissors 是一种典型的交互式边界提取方法。
 
 ---
 
-*本笔记由 Claudian 整理 | [[Lecture 4 - 特征提取]] → [[Lecture 7 - 图像分割（1）|Lecture 7 - 图像分割（1）]] → [[Lecture 8 -.md|Lecture 8 - 图像分割（2）]] → [[Lecture 9 -.md|Lecture 9 - 图像识别]]*
+*本笔记由 Claudian 整理 | [[Lecture 4 - 特征提取]] → [[Lecture 7 - 图像分割（1）|Lecture 7 - 图像分割（1）]] → [[Lecture 8 - 图像分割（2）|Lecture 8 - 图像分割（2）]] → [[Lecture 9 -.md|Lecture 9 - 图像识别]]*

@@ -19,7 +19,7 @@ aliases:
 # 计算机视觉课程总思维导图（Lecture 1-9）
 
 > [!info] 笔记定位
-> 这是一份面向 [[Lecture 1 - 机器视觉概述]]、[[Lecture 2 - 相机模型与图像]]、[[Lecture 3 - 图像处理]]、[[Lecture 4 - 特征提取]]、[[计算机视觉/笔记/Lecture 5 - 特征描述与图像对齐]]、[[Lecture 6 - 多视图几何]]、[[Lecture 7 - 图像分割（1）]]、[[Lecture 8 -.md|Lecture 8 - 图像分割（2）]]、[[Lecture 9 -.md|Lecture 9 - 图像识别]] 的**课程总思维导图 + 代码映射总表**。
+> 这是一份面向 [[Lecture 1 - 机器视觉概述]]、[[Lecture 2 - 相机模型与图像]]、[[Lecture 3 - 图像处理]]、[[Lecture 4 - 特征提取]]、[[计算机视觉/笔记/Lecture 5 - 特征描述与图像对齐]]、[[Lecture 6 - 多视图几何]]、[[Lecture 7 - 图像分割（1）]]、[[Lecture 8 - 图像分割（2）|Lecture 8 - 图像分割（2）]]、[[Lecture 9 -.md|Lecture 9 - 图像识别]] 的**课程总思维导图 + 代码映射总表**。
 >
 > 目标有三个：
 > 1. 帮你从课程全局理解 Lecture 1-9 的知识递进关系；
@@ -355,4 +355,4 @@ graph TD
 
 ---
 
-*本笔记由 Claudian 整理 | 对应 [[Lecture 1 - 机器视觉概述]]、[[Lecture 2 - 相机模型与图像]]、[[Lecture 3 - 图像处理]]、[[Lecture 4 - 特征提取]]、[[计算机视觉/笔记/Lecture 5 - 特征描述与图像对齐]]、[[Lecture 6 - 多视图几何]]、[[Lecture 7 - 图像分割（1）]]、[[Lecture 8 -.md|Lecture 8 - 图像分割（2）]]、[[Lecture 9 -.md|Lecture 9 - 图像识别]]*
+*本笔记由 Claudian 整理 | 对应 [[Lecture 1 - 机器视觉概述]]、[[Lecture 2 - 相机模型与图像]]、[[Lecture 3 - 图像处理]]、[[Lecture 4 - 特征提取]]、[[计算机视觉/笔记/Lecture 5 - 特征描述与图像对齐]]、[[Lecture 6 - 多视图几何]]、[[Lecture 7 - 图像分割（1）]]、[[Lecture 8 - 图像分割（2）|Lecture 8 - 图像分割（2）]]、[[Lecture 9 -.md|Lecture 9 - 图像识别]]*
