@@ -1,13 +1,12 @@
 {
   "id": "conv-1775186121845-2wio5jgn0",
-  "title": "Format Lecture 5 notes for Obsidian",
+  "title": "Format lectures 9-10 to match 1-9 style",
   "titleGenerationStatus": "success",
   "createdAt": 1775186121845,
-  "updatedAt": 1775186531275,
-  "lastResponseAt": 1775186531275,
+  "updatedAt": 1779708666422,
+  "lastResponseAt": 1779708665445,
   "sessionId": "0ce7f5f6-9e36-484e-a0a3-55e2af8b28ac",
   "sdkSessionId": "0ce7f5f6-9e36-484e-a0a3-55e2af8b28ac",
-  "currentNote": "Lecture 5 - 特征描述与图像对齐.md",
   "usage": {
     "model": "opus",
     "inputTokens": 0,

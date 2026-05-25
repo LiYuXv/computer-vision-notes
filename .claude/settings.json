@@ -3,7 +3,8 @@
     "allow": [
       "Write(G:\\\\计算机视觉\\\\笔记\\\\.claude\\\\update_canvas.py)",
       "Bash(rm \".claude/update_canvas.py\")",
-      "Bash(python -)"
+      "Bash(python -)",
+      "mcp__filesystem__directory_tree"
     ]
   }
 }
