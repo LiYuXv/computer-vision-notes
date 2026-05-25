@@ -4,7 +4,9 @@
       "Write(G:\\\\计算机视觉\\\\笔记\\\\.claude\\\\update_canvas.py)",
       "Bash(rm \".claude/update_canvas.py\")",
       "Bash(python -)",
-      "mcp__filesystem__directory_tree"
+      "mcp__filesystem__directory_tree",
+      "Bash(python -c \"\nimport json, sys\nfiles = [\n    'G:/compute_vision/笔记/计算机视觉/思维导图/计算机视觉课程-点云知识网络.canvas',\n    'G:/compute_vision/笔记/计算机视觉/思维导图/计算机视觉课程总思维导图（Lecture 1-15）.canvas'\n]\nfor f in files:\n    try:\n        with open\\(f, 'r', encoding='utf-8'\\) as fh:\n            data = json.load\\(fh\\)\n        nodes = {n['id'] for n in data.get\\('nodes', []\\)}\n        edge_ids = {e['id'] for e in data.get\\('edges', []\\)}\n        # Check no ID collisions\n        assert len\\(nodes & edge_ids\\) == 0, f'ID collision in {f}'\n        # Check edge refs\n        for e in data['edges']:\n            assert e['fromNode'] in nodes, f'Missing fromNode {e[\\\\\"fromNode\\\\\"]} in {f}'\n            assert e['toNode'] in nodes, f'Missing toNode {e[\\\\\"toNode\\\\\"]} in {f}'\n        print\\(f'✅ {f.split\\(\\\\\"/\\\\\"\\)[-1]}: {len\\(data[\\\\\"nodes\\\\\"]\\)} nodes, {len\\(data[\\\\\"edges\\\\\"]\\)} edges — VALID'\\)\n    except Exception as ex:\n        print\\(f'❌ {f.split\\(\\\\\"/\\\\\"\\)[-1]}: {ex}'\\)\n\")",
+      "Bash(python -c ' *)"
     ]
   }
 }
