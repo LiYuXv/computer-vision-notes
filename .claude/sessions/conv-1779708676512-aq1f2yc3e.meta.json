@@ -3,19 +3,19 @@
   "title": "Greet in Chinese",
   "titleGenerationStatus": "success",
   "createdAt": 1779708676512,
-  "updatedAt": 1779710809785,
-  "lastResponseAt": 1779710809785,
+  "updatedAt": 1779715131180,
+  "lastResponseAt": 1779715131180,
   "sessionId": "0752b2fe-fd5c-48ad-9c64-afae6575c507",
   "sdkSessionId": "0752b2fe-fd5c-48ad-9c64-afae6575c507",
   "currentNote": "计算机视觉/笔记/Lecture 14 - CNN图像分割.md",
   "usage": {
     "model": "opus",
-    "inputTokens": 343,
+    "inputTokens": 168,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 168064,
+    "cacheReadInputTokens": 184832,
     "contextWindow": 200000,
-    "contextTokens": 168407,
-    "percentage": 84
+    "contextTokens": 185000,
+    "percentage": 93
   },
   "subagentData": {
     "call_00_UdPW53YxYTDRdeTvZXwl5995": {
